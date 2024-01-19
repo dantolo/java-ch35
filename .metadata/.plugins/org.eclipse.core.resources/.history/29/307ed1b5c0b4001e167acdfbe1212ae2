@@ -1,0 +1,40 @@
+package loops;
+import java.util.Scanner;
+public class WhileLoops {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+/*
+ int cuenta = 0;
+ while (cuenta < 10){
+ 	cuenta ++;
+ 	System.out.println("la cuenta es de " + cuenta);
+ }
+ */
+		
+		
+ Scanner sc = new Scanner(System.in);
+ 
+ System.out.println("Escribe un numero que servirá como numero final de una cuenta");
+ 
+ int nFinal = sc.nextInt();
+ 
+ int nInicial = 1;
+ 
+ while(nInicial <= nFinal) {
+	 System.out.println("La cuenta va en " + nInicial);
+	 nInicial++;
+ }
+ sc.close();
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	}
+
+}

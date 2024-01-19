@@ -1,0 +1,19 @@
+package excercises;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class SistemaEscolar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//inicializar un Arraylist para guardar a los estudiantes
+		
+		ArrayList<String> estudiantes = new ArrayList<String>();
+		
+		Scanner scanner = new Scanner(System.in);
+		
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package collections;
+import java.util.HashSet;
+public class HashSetCollection {
+
+	public static void main(String[] args) {
+		 // Crear un HashSet de tipo String
+        HashSet<String> set = new HashSet<>();
+
+        // Agregar elementos al HashSet
+        set.add("Elemento 1");
+        set.add("Elemento 2");
+        set.add("Elemento 3");
+
+        // Mostrar el HashSet
+        System.out.println("HashSet: " + set);
+	}
+
+}

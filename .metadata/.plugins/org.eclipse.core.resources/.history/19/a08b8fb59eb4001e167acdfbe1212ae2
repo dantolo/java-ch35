@@ -1,0 +1,71 @@
+package controlFlujo;
+
+import java.util.Scanner;
+
+public class FlujoControl {
+
+	public static void main(String[] args) { // debe coincidir la clase con el nombre del documento
+		String viaje = null;
+		
+		if(viaje != null) {
+			
+			System.out.println("ya no tenemos fechas disponibles");
+			
+			}else {
+				System.out.println("puede reservar su viaje");
+			}
+
+		
+		/*Validación de contraseñas
+				Scanner scanner = new Scanner (System.in);
+				
+				//Solicitar la contraseña 
+				System.out.print("Ingrese la contraseña: ");
+				String passw1 = scanner.nextLine();
+				
+				//Verificando contraseña
+				System.out.print("Ingrese nuevamente la contraseña: ");
+				String passw2 = scanner.nextLine();
+				
+				//Verificar si las contraseñas son iguales
+				if (passw1.equals(passw2)) {
+					System.out.println("Las contraseñas coinciden");
+				} else {
+					System.out.println("Contraseñas no coinciden");
+				}
+				
+				scanner.close();*/
+		
+		//ejercicio de switch
+		
+		
+		        Scanner scanner = new Scanner(System.in);
+
+		        System.out.println("Ingrese un número del 1 al 3: ");
+		        int opcion = scanner.nextInt();
+
+		        // Uso de switch para tomar decisiones basadas en el valor de 'opcion'
+		        switch (opcion) {
+		            case 1:
+		                System.out.println("Seleccionaste la opción 1");
+		                break;
+		            case 2:
+		                System.out.println("Seleccionaste la opción 2");
+		                break;
+		            case 3:
+		                System.out.println("Seleccionaste la opción 3");
+		                break;
+		            default:
+		                System.out.println("Opción no válida");
+		        }
+
+		        scanner.close();
+		    
+		
+		
+		
+		
+		
+	}//main
+
+}//class

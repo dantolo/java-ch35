@@ -1,0 +1,20 @@
+package loops;
+
+public class WhileLoops {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+
+ int cuenta = 0;
+ while (cuenta < 10){
+ 	cuenta ++;
+ 	System.out.println("la cuenta es de " + cuenta);
+ }
+ 
+ 
+ 
+	}
+
+}

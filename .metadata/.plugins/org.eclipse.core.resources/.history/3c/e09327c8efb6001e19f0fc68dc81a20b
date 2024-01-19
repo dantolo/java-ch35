@@ -1,0 +1,79 @@
+package collections;
+
+import java.util.Arrays;
+import java.util.ArrayList;
+
+
+public class ArrayListCollections {
+
+	public static void main(String[] args) {
+		//*************Arrays**************//
+		
+		
+		String[] names = {"Jonathan", "Gonzalo", "Fernanda", "Lizbeth", "Arturo", "Uriel", "Martin", "Lucero" };
+		//Imprimiendo Arrays
+		System.out.println(Arrays.toString(names));
+		
+		int[] edades = {12,15,25,35,95,85 };
+		//Imprimiendo Arrays
+		System.out.println(Arrays.toString(edades));
+		
+		
+		//Acceder a cada elemento del Array
+		
+		String name1 = names[0];
+		System.out.println("El primer nombre de la lista es " + name1);
+		int edad1 = edades[2];
+		System.out.println("La edad de " + name1 + " es de " + edad1 + " años");
+		
+		//Obtener la longitud del Array
+		int longitudNames = names.length;
+		System.out.println("El array names tiene " + longitudNames + "Elementos" );
+		
+		//obtener el ultimo elemento
+		
+		String ultimoElemento = names[longitudNames -1]; 
+		System.out.println("El ultimo elemento del Array names es " + ultimoElemento);
+		
+		
+		//mostrar cada elemento utilizando forEach
+		
+		for (String name : names) {
+			System.out.println(name);
+			
+		}
+		
+		
+		
+		//************ ArrayList ***********************//
+		// ArrayList es un array que puede cambiar de tamaño. Es la clase de Java que representa la estructura de 			datos de Arrays. Permite elementos duplicados y recibe varios metodos.
+		
+		ArrayList<String> films = new ArrayList<String>();
+		ArrayList<Integer> matricula = new ArrayList<>();
+		//Agregar Elementos 
+		films.add("capitanes");
+		films.add("pulp fiction");
+		films.add("Amor despues del Amor");
+		films.add("The shining");
+		films.add("SAW");
+		films.add("Sociedad nieve");
+		films.add("Barbie");
+		films.add("La mosca");
+		
+		
+		System.out.println(films);
+		
+		//obtener un elemento: name.get(index);
+		String film1 = films.get(0);
+		System.out.println("La primera pelicula es " + film1);
+		
+		//modificar un elemento: name.set(index, newValue)
+		String film3 = films.set(3, "oricrux");
+		
+		System.out.println(films);
+		
+		
+		
+		}
+
+}

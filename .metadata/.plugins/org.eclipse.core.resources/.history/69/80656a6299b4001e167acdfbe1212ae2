@@ -1,0 +1,25 @@
+package controlFlujo;
+
+public class FlujoControl {
+
+	public static void main(String[] args) { // debe coincidir la clase con el nombre del documento
+		String viaje = null;
+		
+		if(viaje != null) {
+			
+			System.out.println("ya no tenemos fechas disponibles");
+			
+			}else {
+				System.out.println("puede reservar su viaje");
+			}
+
+		
+		
+		
+		
+		
+		
+		
+	}//main
+
+}//class
