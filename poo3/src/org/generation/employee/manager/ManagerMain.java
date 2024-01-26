@@ -1,18 +1,17 @@
 package org.generation.employee.manager;
 
-public class ManagerMain  {
-
+public class ManagerMain {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Manager Fernanda = new Manager("Fernanda Ramos", 136, 45365.20, "Manager", 2);
-		System.out.println(Fernanda);
+		Manager Fernanda = new Manager("Fernanda Ramos", 136, 45365.20d, "Manager", 3);
 		
-		//metodo calcular salario
+		//Método calcular salario base heredado
+		double salarioBaseFer = Fernanda.salarioBase;
 		
-		double salarioFer = Fernanda.getSalarioBase();
+		//Método calcular salario polimórfico
+		Fernanda.calcularSalario();
 		
-		System.out.println("El salario de " + Fernanda.getNombreCompleto() + " con posicion de " + Fernanda.getPuesto() + " es de $ " + salarioFer + " pero posee una antiguedad de " + Fernanda.getAntiguedad() +  " años, por lo tanto su salario incrementa a " + Fernanda.getSalario() );
+		double salarioFer = Fernanda.getSalario();
+		System.out.println("El salario base de " + Fernanda.getNombreCompleto() + " con posición de " + Fernanda.getPuesto() + " es de $" + salarioBaseFer + " pero posee una antigüedad de " + Fernanda.getAntiguedad() + " años, por lo tanto su salario incrementa a $" + salarioFer);
 		
-				}
-
+	}
 }
